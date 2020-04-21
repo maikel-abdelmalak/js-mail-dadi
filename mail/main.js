@@ -18,6 +18,11 @@ for (var i = 0; i < mail_autorizzate.length; i++){
 // restituisco il risultato
 if(controllo == 1){
     console.log('accesso consentito');
+    //prova
+    //document.getElementById('si').style.display = 'block';
+    document.getElementById('si').setAttribute('class', 'visible');
 }else{
     console.log('mail errata');
+    //document.getElementById('no').style.display = 'block';
+    document.getElementById('no').setAttribute('class', 'visible');
 }
