@@ -11,15 +11,19 @@ var scelta_utente = prompt('scegli la squadra rossa o la squadra verde', 'rossa 
 
 
 // se l'utente sceglie la squadra con il numero più alto vince altrimenti vince il pc
-if (scelta_utente == 'rossa' && rossa > verde){
-    console.log('hai vinto');
-    document.getElementById('si').setAttribute('class', 'visible');
-}else if (scelta_utente == 'verde' && verde > rossa) {
-    console.log('hai vinto');
-    document.getElementById('si').setAttribute('class', 'visible');
-}else if(rossa == verde){
-    document.getElementById('pari').setAttribute('class', 'visible');
+if(scelta_utente == 'rossa' || scelta_utente == 'verde'){
+    if (scelta_utente == 'rossa' && rossa > verde){
+        console.log('hai vinto');
+        document.getElementById('si').setAttribute('class', 'visible');
+    }else if (scelta_utente == 'verde' && verde > rossa) {
+        console.log('hai vinto');
+        document.getElementById('si').setAttribute('class', 'visible');
+    }else if(rossa == verde){
+        document.getElementById('pari').setAttribute('class', 'visible');
+    }else{
+        console.log('hai perso');
+        document.getElementById('no').setAttribute('class', 'visible');
+    }
 }else{
-    console.log('hai perso');
-    document.getElementById('no').setAttribute('class', 'visible');
+    document.getElementById('null').setAttribute('class', 'visible');
 }

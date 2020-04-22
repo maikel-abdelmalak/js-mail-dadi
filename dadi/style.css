@@ -20,6 +20,10 @@ p{
     font-weight: bold;
 }
 
+#null{
+    color: red;
+}
+
 #no{
     color:red;
 }
