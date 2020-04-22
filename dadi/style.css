@@ -24,6 +24,10 @@ p{
     color:red;
 }
 
+#pari{
+    color: blue;
+}
+
 .visible{
     display: block;
 }
